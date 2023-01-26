@@ -19,3 +19,4 @@ function stopChangingColor() {
   clearInterval(intervalId);
   startBtn.disabled = false;
 }
+//  на ПК працює... Але на гіт хабі чомусь ні... постійно ще й з getElementById проблеми...І постійний жорсткий апдейт сторінки щоб побачити зміни...
