@@ -8,7 +8,7 @@ function changeBackgroundColor() {
   intervalId = setInterval(() => {
     document.body.style.backgroundColor = getRandomHexColor();
   }, 1000);
-  startBtn.setAttribute('disabled', true);
+  startBtn.disabled = true;
 }
 
 function getRandomHexColor() {
@@ -17,5 +17,5 @@ function getRandomHexColor() {
 
 function stopChangingColor() {
   clearInterval(intervalId);
-  startBtn.removeAttribute('disabled');
+  startBtn.disabled = false;
 }
